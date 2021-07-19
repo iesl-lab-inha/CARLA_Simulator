@@ -1,0 +1,7 @@
+*.pyc
+build.gradle
+/CMakeLists.txt
+.catkin_workspace
+
+.vscode
+.idea

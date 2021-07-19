@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>calibration_publisher</name>
+  <version>1.12.0</version>
+  <description>
+    Autoware instrinsic and extrinsic calibration publisher
+  </description>
+  <maintainer email="abrahammonrroy@yahoo.com">amc</maintainer>
+  <license>Apache</license>
+
+  <buildtool_depend>autoware_build_flags</buildtool_depend>
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>autoware_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>geometry_msgs</depend>
+  <depend>image_transport</depend>
+  <depend>roscpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf2</depend>
+  <depend>libopencv-dev</depend>
+</package>

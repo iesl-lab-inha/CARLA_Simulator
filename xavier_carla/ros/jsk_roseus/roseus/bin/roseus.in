@@ -1,0 +1,30 @@
+#!/bin/bash
+set -e
+
+if [ "@APPLE@" = "1" ]; then
+  EUSLISP_EXE=/usr/local/bin/irteusgl  # osx
+else
+  EUSLISP_EXE=`find -L $EUSDIR -type f -name irteusgl`  # linux
+fi
+ROSEUS_DIR=`rospack find roseus`
+ARG_STR=("(pushnew \"${ROSEUS_DIR}/euslisp/\" *load-path* :test #'equal)" \
+        ${ROSEUS_DIR}/euslisp/roseus.l ${ROSEUS_DIR}/euslisp/eustf.l ${ROSEUS_DIR}/euslisp/actionlib.l ${ROSEUS_DIR}/euslisp/roseus-utils.l)
+# echo "rosrun euslisp irteusgl ${ARG_STR[@]} $@"
+
+LAUNCH_PREFIX="exec"
+case $1 in
+    --gdb)
+        shift # past argument
+        GDB_OPTIONS=/tmp/roseus_gdbinit
+        cat <<EOF > $GDB_OPTIONS
+break error
+commands
+where
+end
+run
+EOF
+        LAUNCH_PREFIX="gdb -x $GDB_OPTIONS --args"
+esac
+
+${LAUNCH_PREFIX} ${EUSLISP_EXE} "${ARG_STR[@]}" "$@"
+exit $?

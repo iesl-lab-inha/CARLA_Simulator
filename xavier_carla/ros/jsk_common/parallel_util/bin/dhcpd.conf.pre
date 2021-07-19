@@ -1,0 +1,12 @@
+ddns-update-style none;
+
+# option definitions common to all supported networks...
+option domain-name "jsk.t.u-tokyo.ac.jp";
+option domain-name-servers 192.168.96.209;
+
+default-lease-time 64800;
+max-lease-time 64800;
+
+log-facility local7;
+
+allow unknown-clients;

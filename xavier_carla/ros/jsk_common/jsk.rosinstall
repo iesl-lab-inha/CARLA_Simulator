@@ -1,0 +1,221 @@
+# rosinstall file for https://github.com/jsk-ros-pkg
+# use #@# for special comment out, due to jsk.rosbuild specification
+#
+
+# jsk-ros-pkg
+- git:
+    uri: https://github.com/jsk-ros-pkg/jsk_visualization.git
+    local-name: jsk-ros-pkg/jsk_visualization
+    version: master
+- git:
+    uri: https://github.com/jsk-ros-pkg/jsk_smart_apps.git
+    local-name: jsk-ros-pkg/jsk_smart_apps
+    version: master
+- git:
+    uri: https://github.com/jsk-ros-pkg/jsk_roseus.git
+    local-name: jsk-ros-pkg/jsk_roseus
+    version: master
+- git:
+    uri: https://github.com/jsk-ros-pkg/jsk_robot.git
+    local-name: jsk-ros-pkg/jsk_robot
+    version: master
+- git:
+    uri: https://github.com/jsk-ros-pkg/jsk_recognition.git
+    local-name: jsk-ros-pkg/jsk_recognition
+    version: master
+- git:
+    uri: https://github.com/jsk-ros-pkg/jsk_pr2eus.git
+    local-name: jsk-ros-pkg/jsk_pr2eus
+    version: master
+- git:
+    uri: https://github.com/jsk-ros-pkg/jsk_planning.git
+    local-name: jsk-ros-pkg/jsk_planning
+    version: master
+- git:
+    uri: https://github.com/jsk-ros-pkg/jsk_model_tools.git
+    local-name: jsk-ros-pkg/jsk_model_tools
+    version: master
+- git:
+    uri: https://github.com/jsk-ros-pkg/jsk_demos.git
+    local-name: jsk-ros-pkg/jsk_demos
+    version: master
+- git:
+    uri: https://github.com/jsk-ros-pkg/jsk_control.git
+    local-name: jsk-ros-pkg/jsk_control
+    version: master
+- git:
+    uri: https://github.com/jsk-ros-pkg/jsk_common.git
+    local-name: jsk-ros-pkg/jsk_common
+    version: master
+- git:
+    uri: https://github.com/jsk-ros-pkg/jsk_common_msgs.git
+    local-name: jsk-ros-pkg/jsk_common_msgs
+    version: master
+- git:
+    uri: https://github.com/jsk-ros-pkg/jsk_3rdparty.git
+    local-name: jsk-ros-pkg/jsk_3rdparty
+    version: master
+- git:
+    uri: https://github.com/jsk-ros-pkg/jsk_openni_kinect.git
+    local-name: jsk-ros-pkg/jsk_openni_kinect
+    version: master
+
+# for snap map icp
+- git:
+    uri: https://github.com/code-iai/snap_map_icp.git
+    local-name: snap_map_icp
+    version: hydro-devel
+
+# rwt
+# - git:
+#     uri: git://github.com/jihoonl/roswww.git
+#     local-name : roswww
+- git:
+    uri: https://github.com/tork-a/rwt_ros.git
+    local-name : rwt_ros
+- git:
+    uri: https://github.com/tork-a/roswww.git
+    local-name : roswww
+- git:
+    uri: https://github.com/tork-a/visualization_rwt.git
+    local-name: visualization_rwt
+
+# nao
+- git:
+    uri: https://github.com/ros-naoqi/nao_robot.git
+    local-name: ros_naoqi/nao_robot
+- git:
+    uri: https://github.com/ros-naoqi/nao_meshes.git
+    local-name: ros_naoqi/nao_meshes
+- git:
+    uri: https://github.com/ros-naoqi/nao_virtual.git
+    local-name: ros_naoqi/nao_virtual
+# - git:
+#     uri: https://github.com/ros-nao/nao_sensors.git
+#     local-name: ros_nao/nao_sensors
+- git:
+    uri: https://github.com/ros-naoqi/nao_moveit_config.git
+    local-name: ros_naoqi/nao_moveit_config
+- git:
+    uri: https://github.com/ros-naoqi/nao_interaction.git
+    local-name: ros_naoqi/nao_interaction
+- git:
+    uri: https://github.com/ros-naoqi/nao_viz.git
+    local-name: ros_naoqi/nao_viz
+- git:
+    uri: https://github.com/ros-naoqi/nao_extras.git
+    local-name: ros_naoqi/nao_extras
+- git:
+    uri: https://github.com/ros-naoqi/naoqi_bridge.git
+    local-name: ros_naoqi/naoqi_bridge
+- git:
+    uri: https://github.com/ros-naoqi/naoqi_bridge_msgs.git
+    local-name: ros_naoqi/naoqi_bridge_msgs
+- git:
+    local-name: roboticsgroup/roboticsgroup_gazebo_plugins
+    uri: https://github.com/roboticsgroup/roboticsgroup_gazebo_plugins.git
+- git:
+    local-name: pal-robotics/pal_msgs
+    uri: https://github.com/pal-robotics/pal_msgs.git
+- git:
+    local-name: pal-robotics/pal_gazebo_plugins
+    uri: https://github.com/pal-robotics/pal_gazebo_plugins.git
+
+# baxter
+- git:
+    uri: https://github.com/RethinkRobotics/baxter.git
+    local-name: RethinkRobotics/baxter
+- git:
+    uri: https://github.com/RethinkRobotics/baxter_interface.git
+    local-name: RethinkRobotics/baxter_interface
+- git:
+    uri: https://github.com/RethinkRobotics/baxter_tools.git
+    local-name: RethinkRobotics/baxter_tools
+- git:
+   uri: https://github.com/RethinkRobotics/baxter_common.git
+   local-name: RethinkRobotics/baxter_common
+- git:
+   uri: https://github.com/RethinkRobotics/baxter_examples.git
+   local-name: RethinkRobotics/baxter_examples
+
+# moveit
+- git:
+    uri: https://github.com/ros-planning/moveit_robots.git
+    local-name: ros-planning/moveit_robots
+
+# rviz stuff
+- git:
+    local-name: view_controller_msgs
+    uri: https://github.com/ros-visualization/view_controller_msgs.git
+    version: hydro-devel
+
+# pr2
+- git:
+    local-name: pr2_mechanism
+    uri: 'https://github.com/PR2/pr2_mechanism.git'
+    version: hydro-devel
+- git:
+    local-name: pr2_robot
+    uri: 'https://github.com/PR2/pr2_robot.git'
+- git:
+    local-name: SharedAutonomyToolkit/shared_autonomy_manipulation
+    uri: 'https://github.com/SharedAutonomyToolkit/shared_autonomy_manipulation.git'
+    version: hydro-devel
+- git:
+    local-name: multimaster_experimental
+    uri: 'https://github.com/willowgarage/multimaster_experimental.git'
+- git:
+    local-name: pr2_navigation_apps
+    uri: 'https://github.com/PR2/pr2_navigation_apps.git'
+    version: hydro-devel
+- git:
+    local-name: pr2_apps
+    uri: 'https://github.com/PR2/pr2_apps.git'
+    version: hydro-devel
+# - git:
+#     local-name: pr2_gripper_sensor
+#     uri: 'https://github.com/PR2/pr2_gripper_sensor.git'
+#     version: hydro-devel
+- git:
+    local-name: pr2_common_actions
+    uri: 'https://github.com/PR2/pr2_common_actions.git'
+    version: hydro-devel
+- git:
+    local-name: pr2_navigation
+    uri: 'https://github.com/PR2/pr2_navigation.git'
+    version: hydro-devel
+- git:
+    local-name: willow_maps
+    uri: 'https://github.com/PR2/willow_maps.git'
+    version: hydro-devel
+# - git:
+#     local-name: pr2_calibration
+#     uri: 'https://github.com/PR2/pr2_calibration.git'
+#     version: hydro-devel
+- git:
+    local-name: kinematics_msgs
+    uri: 'https://github.com/PR2/kinematics_msgs.git'
+    version: hydro-devel
+- git:
+    local-name: arm_navigation_msgs
+    uri: 'https://github.com/PR2/arm_navigation_msgs.git'
+    version: hydro-devel
+- git:
+    local-name: pr2_kinematics
+    uri: 'https://github.com/PR2/pr2_kinematics.git'
+    version: hydro-devel
+- git:
+    local-name: mongodb_store
+    uri: 'https://github.com/strands-project/mongodb_store.git'
+    version: hydro-devel
+- hg:
+    local-name: multisense
+    uri: 'https://bitbucket.org/crl/multisense_ros'
+    version: 3.4.9
+# - git:
+#     local-name: ar_tools
+#     uri: 'https://github.com/ar-tools/ar_tools.git'
+#     version: master
+- git:
+    local-name: face_recognition
+    uri: https://github.com/procrob/face_recognition.git

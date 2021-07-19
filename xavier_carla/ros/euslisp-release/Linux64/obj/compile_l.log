@@ -1,0 +1,46 @@
+nil
+nil
+nil
+"/home/bogus/connected-car/intelligent-embedded-systems/ros/euslisp-release/lisp"
+t
+nil
+nil
+t
+t
+nil
+#<package #X562f192591b8 LISP>
+nil
+"../../Linux64/obj/"
+nil
+"readmacro.l"
+"common.l"
+"pprint.l"
+"stream.l"
+"loader.l"
+nil
+"eusdebug.l"
+"process.l"
+"packsym.l"
+"object.l"
+"string.l"
+"array.l"
+"hashtab.l"
+"eusforeign.l"
+nil
+"mathtran.l"
+"toplevel.l"
+"tty.l"
+nil
+"history.l"
+"cyclic.l"
+"eushelp.l"
+#<package #X562f1935e060 GEOMETRY>
+"coordinates.l"
+#<package #X562f192593b0 SYSTEM>
+"par.l"
+#<package #X562f192591b8 LISP>
+"euscomp finished."
+"euscomp finished."
+t
+"/home/bogus/connected-car/intelligent-embedded-systems/ros/euslisp-release/lisp"
+"/home/bogus/connected-car/intelligent-embedded-systems/ros/euslisp-release/lisp"

@@ -1,0 +1,4 @@
+<launch>
+  <node name="listener" pkg="roscpp_tutorials" type="listener" output="log"/>
+  <node name="talker" pkg="roscpp_tutorials" type="talker" output="log"/>
+</launch>

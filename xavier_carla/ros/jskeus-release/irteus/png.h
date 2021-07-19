@@ -1,0 +1,32 @@
+static pointer (*ftab[4])();
+
+#define QUOTE_STRINGS_SIZE 27
+static char *quote_strings[QUOTE_STRINGS_SIZE]={
+    "probe-file",
+    "png-read-image",
+    "1",
+    "grayscale-image",
+    ":init",
+    "3",
+    "color-image24",
+    "\";; read-png-file: unsupported image byte-depth ~A\"",
+    ":name",
+    ":byte-depth",
+    "\";; write-png-file: unsupported image type ~A\"",
+    ":width",
+    ":height",
+    ":entity",
+    "png-write-image",
+    "\"IMAGE\"",
+    "\"IMAGE\"",
+    "*package*",
+    "\"no such package\"",
+    "(read-png-file write-png-file)",
+    "read-png-file",
+    "\"(fname)\"",
+    "write-png-file",
+    "\"(fname img)\"",
+    ":png",
+    "\"@(#)$Id$\"",
+    "provide",
+  };

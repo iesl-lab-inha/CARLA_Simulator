@@ -1,0 +1,5 @@
+repositories:
+  depends/autoware/messages:
+    type: git
+    url: https://github.com/Autoware-AI/messages.git
+    version: master
